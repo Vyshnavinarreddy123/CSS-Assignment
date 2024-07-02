@@ -1,0 +1,44 @@
+/* Element selector: style all paragraphs */
+p {
+	color: #666;
+	font-size: 18px;
+}
+
+/* Class selector: style elements with class "highlight" */
+.highlight {
+	background-color: #ffff99;
+	padding: 10px;
+}
+
+/* ID selector: style element with id "special" */
+#special {
+	font-size: 24px;
+	font-weight: bold;
+	color: #0099cc;
+}
+
+/* Attribute selector: style links with target="_blank" */
+a[target="_blank"] {
+	background-color: #ccccff;
+	padding: 5px;
+}
+
+/* Pseudo-class selector: style active links */
+a:active {
+	color: #ff0000;
+}
+
+/* Pseudo-element selector: style first letter of paragraphs */
+p::first-letter {
+	font-size: 24px;
+	font-weight: bold;
+	color: #0066cc;
+}
+
+/* Class selector: style active menu items */
+.active {
+	background-color: #333;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+}
