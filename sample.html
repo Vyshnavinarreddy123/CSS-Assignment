@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Color Properties Demo</title>
+	<style>
+		/* Global Styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		/* Color Property Demo */
+		.color-demo {
+			width: 200px;
+			height: 100px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.color-demo.color-red {
+			color: red;
+		}
+		
+		.color-demo.color-blue {
+			color: blue;
+		}
+		
+		/* Background Color Property Demo */
+		.background-color-demo {
+			width: 200px;
+			height: 100px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.background-color-demo.bg-red {
+			background-color: red;
+		}
+		
+		.background-color-demo.bg-blue {
+			background-color: blue;
+		}
+		
+		/* Gradient Background Demo */
+		.gradient-demo {
+			width: 200px;
+			height: 100px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.gradient-demo.linear-gradient {
+			background-image: linear-gradient(to bottom, red, blue);
+		}
+		
+		.gradient-demo.radial-gradient {
+			background-image: radial-gradient(red, blue);
+		}
+		
+		/* Background Image Demo */
+		.background-image-demo {
+			width: 200px;
+			height: 100px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.background-image-demo.bg-image {
+			background-image: url('https://via.placeholder.com/200x100');
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		
+		/* Background Repeat Demo */
+		.background-repeat-demo {
+			width: 200px;
+			height: 100px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.background-repeat-demo.repeat-x {
+			background-image: url('https://via.placeholder.com/50x50');
+			background-repeat: repeat-x;
+		}
+		
+		.background-repeat-demo.repeat-y {
+			background-image: url('https://via.placeholder.com/50x50');
+			background-repeat: repeat-y;
+		}
+		
+		/* Background Position Demo */
+		.background-position-demo {
+			width: 200px;
+			height: 100px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.background-position-demo.top-left {
+			background-image: url('https://via.placeholder.com/50x50');
+			background-repeat: no-repeat;
+			background-position: top left;
+		}
+		
+		.background-position-demo.center {
+			background-image: url('https://via.placeholder.com/50x50');
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Color Properties Demo</h1>
+	
+	<!-- Color Property Demo -->
+	<h2>Color Property</h2>
+	<div class="color-demo color-red">This text is red</div>
+	<div class="color-demo color-blue">This text is blue</div>
+	
+	<!-- Background Color Property Demo -->
+	<h2>Background Color Property</h2>
+	<div class="background-color-demo bg-red">This background is red</div>
+	<div class="background-color-demo bg-blue">This background is blue</div>
+	
+	<!-- Gradient Background Demo -->
+	<h2>Gradient Background</h2>
+	<div class="gradient-demo linear-gradient">Linear Gradient</div>
+	<div class="gradient-demo radial-gradient">Radial Gradient</div>
+	
+	<!-- Background Image Demo -->
+	<h2>Background Image</h2>
+	<div class="background-image-demo bg-image">Background Image</div>
+	
+	<!-- Background Repeat Demo -->
+	<h2>Background Repeat</h2>
+	<div class="background-repeat-demo repeat-x">Repeat X</div>
+	<div class="background-repeat-demo repeat-y">Repeat Y</div>
+	
+	<!-- Background Position Demo -->
+	<h2>Background Position</h2>
+	<div class="background-position-demo top-left">Top Left</div>
+	<div class="background-position-demo center">Center</div>
+</body>
+</html>
