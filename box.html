@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Box Model Demo</title>
+	<style>
+		/* Global Styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		/* Box Model Demo */
+		.box-model-demo {
+			width: 200px;
+			height: 100px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin: 20px;
+		}
+		
+		/* Content Box Model */
+		.content-box {
+			box-sizing: content-box;
+		}
+		
+		/* Border Box Model */
+		.border-box {
+			box-sizing: border-box;
+		}
+		
+		/* Padding Demo */
+		.padding-demo {
+			padding: 40px;
+			background-color: #ffffcc;
+		}
+		
+		/* Border Demo */
+		.border-demo {
+			border-width: 10px;
+			border-style: solid;
+			border-color: #0066cc;
+		}
+		
+		/* Margin Demo */
+		.margin-demo {
+			margin: 40px;
+			background-color: #ccffcc;
+		}
+		
+		/* Combined Demo */
+		.combined-demo {
+			padding: 20px;
+			border-width: 10px;
+			border-style: solid;
+			border-color: #0066cc;
+			margin: 20px;
+			background-color: #ffffcc;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Box Model Demo</h1>
+	
+	<!-- Content Box Model -->
+	<h2>Content Box Model</h2>
+	<div class="box-model-demo content-box">
+		<p>This is a content box model demo.</p>
+	</div>
+	
+	<!-- Border Box Model -->
+	<h2>Border Box Model</h2>
+	<div class="box-model-demo border-box">
+		<p>This is a border box model demo.</p>
+	</div>
+	
+	<!-- Padding Demo -->
+	<h2>Padding Demo</h2>
+	<div class="box-model-demo padding-demo">
+		<p>This is a padding demo.</p>
+	</div>
+	
+	<!-- Border Demo -->
+	<h2>Border Demo</h2>
+	<div class="box-model-demo border-demo">
+		<p>This is a border demo.</p>
+	</div>
+	
+	<!-- Margin Demo -->
+	<h2>Margin Demo</h2>
+	<div class="box-model-demo margin-demo">
+		<p>This is a margin demo.</p>
+	</div>
+	
+	<!-- Combined Demo -->
+	<h2>Combined Demo</h2>
+	<div class="box-model-demo combined-demo">
+		<p>This is a combined demo.</p>
+	</div>
+</body>
+</html>
