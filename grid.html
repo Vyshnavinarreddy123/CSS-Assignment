@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /* 3 columns with 1:2:1 fraction widths */
+            grid-template-rows: 100px 200px; /* 2 rows with specific heights */
+            grid-gap: 10px; /* Gap between grid items */
+            height: 400px; /* Just for demonstration */
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            border: 1px solid blue;
+        }
+
+        .item-1 {
+            grid-column: 1 / span 2; /* Spans 2 columns starting from the first */
+            grid-row: 1; /* Occupies the first row */
+        }
+
+        .item-2 {
+            grid-column: 3; /* Occupies the third column */
+            grid-row: 1 / span 2; /* Spans 2 rows starting from the first */
+        }
+
+        .item-3 {
+            grid-column: 1; /* Occupies the first column */
+            grid-row: 2; /* Occupies the second row */
+        }
+
+        .item-4 {
+            grid-column: 2; /* Occupies the second column */
+            grid-row: 2; /* Occupies the second row */
+        }
+    </style>
+    <title>CSS Grid Layout</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+        <div class="item item-4">Item 4</div>
+    </div>
+</body>
+</html>
