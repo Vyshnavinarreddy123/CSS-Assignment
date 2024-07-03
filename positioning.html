@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Positioning Techniques</title>
+	<style>
+		/* Static positioning (default) */
+		.static {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Relative positioning */
+		.relative {
+			position: relative;
+			top: 20px;
+			left: 30px;
+			background-color: #ffffcc;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Absolute positioning */
+		.absolute {
+			position: absolute;
+			top: 50px;
+			right: 20px;
+			background-color: #ccffcc;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Fixed positioning */
+		.fixed {
+			position: fixed;
+			top: 0;
+			right: 0;
+			background-color: #ffccff;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Sticky positioning */
+		.sticky {
+			position: sticky;
+			top: 10px;
+			background-color: #ccccff;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Container element */
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Positioning Techniques</h1>
+
+	<div class="container">
+		<p>This is a normal paragraph with static positioning.</p>
+		<div class="static">This is a static element.</div>
+		<p>This paragraph is affected by the static element.</p>
+
+		<p>This is a paragraph with a relative element.</p>
+		<div class="relative">This is a relative element.</div>
+		<p>This paragraph is affected by the relative element.</p>
+
+		<p>This is a paragraph with an absolute element.</p>
+		<div class="absolute">This is an absolute element.</div>
+		<p>This paragraph is not affected by the absolute element.</p>
+
+		<p>This is a paragraph with a fixed element.</p>
+		<div class="fixed">This is a fixed element.</div>
+		<p>This paragraph is not affected by the fixed element.</p>
+
+		<p>This is a paragraph with a sticky element.</p>
+		<div class="sticky">This is a sticky element.</div>
+		<p>This paragraph is affected by the sticky element.</p>
+	</div>
+</body>
+</html>
