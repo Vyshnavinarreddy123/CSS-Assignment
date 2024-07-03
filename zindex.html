@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Z-Index Demonstration</title>
+	<style>
+		/* Container element */
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Overlapping elements */
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			position: absolute;
+			top: 50px;
+			left: 50px;
+		}
+
+		/* Z-index values */
+		.z1 {
+			z-index: 1;
+		}
+
+		.z2 {
+			z-index: 2;
+		}
+
+		.z3 {
+			z-index: 3;
+		}
+
+		.z4 {
+			z-index: 4;
+		}
+
+		/* Positioning methods */
+		.relative {
+			position: relative;
+		}
+
+		.absolute {
+			position: absolute;
+		}
+
+		.fixed {
+			position: fixed;
+		}
+	</style>
+</head>
+<body>
+	<h1>Z-Index Demonstration</h1>
+
+	<div class="container">
+		<p>Overlapping elements with different z-index values:</p>
+		<div class="box z1 relative">Box 1 (z-index: 1)</div>
+		<div class="box z2 absolute">Box 2 (z-index: 2)</div>
+		<div class="box z3 fixed">Box 3 (z-index: 3)</div>
+		<div class="box z4 relative">Box 4 (z-index: 4)</div>
+
+		<p>Notice how the elements overlap and are stacked based on their z-index values.</p>
+
+		<p>Now, let's change the positioning methods:</p>
+		<div class="box z1 absolute">Box 1 (z-index: 1, absolute)</div>
+		<div class="box z2 fixed">Box 2 (z-index: 2, fixed)</div>
+		<div class="box z3 relative">Box 3 (z-index: 3, relative)</div>
+		<div class="box z4 absolute">Box 4 (z-index: 4, absolute)</div>
+
+		<p>See how the positioning methods interact with the z-index values to affect the stacking order.</p>
+	</div>
+</body>
+</html>
