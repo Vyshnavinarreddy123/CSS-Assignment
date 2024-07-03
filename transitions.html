@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transitions Demonstration</title>
+	<style>
+		/* Container element */
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Transition elements */
+		.transition {
+			width: 100px;
+			height: 100px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin: 20px;
+			transition-property: background-color, width, height;
+			transition-duration: 2s;
+			transition-timing-function: ease-in-out;
+			transition-delay: 1s;
+		}
+
+		.transition:hover {
+			background-color: #ffffcc;
+			width: 150px;
+			height: 150px;
+		}
+
+		/* Different transition properties */
+		.duration-1 {
+			transition-duration: 1s;
+		}
+
+		.duration-2 {
+			transition-duration: 4s;
+		}
+
+		.timing-linear {
+			transition-timing-function: linear;
+		}
+
+		.timing-ease {
+			transition-timing-function: ease;
+		}
+
+		.delay-2 {
+			transition-delay: 2s;
+		}
+
+		.delay-4 {
+			transition-delay: 4s;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Transitions Demonstration</h1>
+
+	<div class="container">
+		<p>Hover over the elements to see the transitions:</p>
+		<div class="transition">Default transition (2s, ease-in-out, 1s delay)</div>
+		<div class="transition duration-1">Short duration (1s)</div>
+		<div class="transition duration-2">Long duration (4s)</div>
+		<div class="transition timing-linear">Linear timing function</div>
+		<div class="transition timing-ease">Ease timing function</div>
+		<div class="transition delay-2">2s delay</div>
+		<div class="transition delay-4">4s delay</div>
+
+		<p>Notice how the transitions are applied to the background-color, width, and height properties.</p>
+	</div>
+</body>
+</html>
