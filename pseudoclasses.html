@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo-Classes and Pseudo-Elements Demonstration</title>
+	<style>
+		/* Container element */
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Link styles */
+		a {
+			text-decoration: none;
+			color: #06c;
+		}
+
+		a:hover {
+			color: #c06;
+			background-color: #f0f0f0;
+		}
+
+		a:active {
+			color: #060;
+			background-color: #ccc;
+		}
+
+		a:focus {
+			border: 1px solid #06c;
+			box-shadow: 0 0 5px #06c;
+		}
+
+		/* List styles */
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+
+		li:nth-child(odd) {
+			background-color: #f0f0f0;
+		}
+
+		li:nth-child(even) {
+			background-color: #fff;
+		}
+
+		/* Button styles */
+		.button {
+			background-color: #06c;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.button:hover {
+			background-color: #c06;
+		}
+
+		.button:active {
+			background-color: #060;
+			box-shadow: 0 0 5px #060;
+		}
+
+		/* Pseudo-elements */
+		.button:before {
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: #fff;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+
+		.button:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		/* Tooltip styles */
+		.tooltip {
+			position: relative;
+		}
+
+		.tooltip:before {
+			content: attr(data-tooltip);
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #06c;
+			color: #fff;
+			padding: 5px 10px;
+			border-radius: 5px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+
+		.tooltip:hover:before {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<h1>Pseudo-Classes and Pseudo-Elements Demonstration</h1>
+
+	<div class="container">
+		<p>Links:</p>
+		<a href="#">Hover me!</a>
+		<a href="#" class="focus">Focus me!</a>
+		<a href="#" class="active">Active me!</a>
+
+		<p>Lists:</p>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+		</ul>
+
+		<p>Buttons:</p>
+		<button class="button">Click me!</button>
+
+		<p>Tooltips:</p>
+		<span class="tooltip" data-tooltip="This is a tooltip!">Hover me!</span>
+	</div>
+</body>
+</html>
