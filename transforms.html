@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transforms Demonstration</title>
+	<style>
+		/* Container element */
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Transform elements */
+		.transform {
+			width: 100px;
+			height: 100px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin: 20px;
+			transform-origin: center;
+		}
+
+		/* Translate transform */
+		.translate {
+			transform: translate(50px, 20px);
+		}
+
+		/* Rotate transform */
+		.rotate {
+			transform: rotate(45deg);
+		}
+
+		/* Scale transform */
+		.scale {
+			transform: scale(1.5);
+		}
+
+		/* Skew transform */
+		.skew {
+			transform: skew(20deg, 10deg);
+		}
+
+		/* Combine multiple transforms */
+		.combine {
+			transform: translate(20px, 10px) rotate(30deg) scale(1.2) skew(10deg, 5deg);
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Transforms Demonstration</h1>
+
+	<div class="container">
+		<p>Transforms:</p>
+		<div class="transform translate">Translate (50px, 20px)</div>
+		<div class="transform rotate">Rotate (45deg)</div>
+		<div class="transform scale">Scale (1.5)</div>
+		<div class="transform skew">Skew (20deg, 10deg)</div>
+		<div class="transform combine">Combine multiple transforms (translate, rotate, scale, skew)</div>
+
+		<p>Notice how the transforms are applied to the elements using the transform property.</p>
+		<p>Experiment with different transform values and combinations to achieve different effects.</p>
+	</div>
+</body>
+</html>
