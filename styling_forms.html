@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Elements Demonstration</title>
+	<style>
+		/* Container element */
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+		}
+
+		/* Form styles */
+		form {
+			margin: 20px 0;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+			border-color: #06c;
+			box-shadow: 0 0 5px #06c;
+		}
+
+		input[type="text"]:invalid, input[type="email"]:invalid, input[type="password"]:invalid {
+			border-color: #c06;
+			box-shadow: 0 0 5px #c06;
+		}
+
+		/* Checkbox styles */
+		input[type="checkbox"] {
+			margin-right: 10px;
+		}
+
+		/* Radio button styles */
+		input[type="radio"] {
+			margin-right: 10px;
+		}
+
+		/* Select menu styles */
+		select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		select:focus {
+			border-color: #06c;
+			box-shadow: 0 0 5px #06c;
+		}
+
+		/* Button styles */
+		button[type="submit"] {
+			background-color: #06c;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #c06;
+		}
+
+		button[type="submit"]:active {
+			background-color: #060;
+			box-shadow: 0 0 5px #060;
+		}
+	</style>
+</head>
+<body>
+	<h1>Form Elements Demonstration</h1>
+
+	<div class="container">
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<label for="checkbox">Checkbox:</label>
+			<input type="checkbox" id="checkbox" name="checkbox">
+
+			<label for="radio">Radio button:</label>
+			<input type="radio" id="radio" name="radio" value="option1">
+			<input type="radio" id="radio" name="radio" value="option2">
+
+			<label for="select">Select menu:</label>
+			<select id="select" name="select">
+				<option value="">Select an option</option>
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+			</select>
+
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

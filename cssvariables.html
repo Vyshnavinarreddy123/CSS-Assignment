@@ -1,0 +1,56 @@
+/* Variables */
+
+:root {
+  /* Colors */
+  --primary-color: #06c;
+  --secondary-color: #c06;
+  --background-color: #f0f0f0;
+  --text-color: #333;
+
+  /* Font sizes */
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+
+  /* Spacing */
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 30px;
+
+  /* Other variables */
+  --border-radius: 5px;
+  --box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles */
+
+.container {
+  background-color: var(--background-color);
+  padding: var(--spacing-medium);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+h1 {
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+}
+
+p {
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+  margin-bottom: var(--spacing-small);
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
