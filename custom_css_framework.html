@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom CSS Framework</title>
+    <style>
+        /* 1. Grid System */
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px; /* Adjust for gutters */
+        }
+
+        .grid-row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .grid-col {
+            padding: 10px; /* Gutters */
+        }
+
+        .grid-col-1 { width: 8.33%; }
+        .grid-col-2 { width: 16.66%; }
+        .grid-col-3 { width: 25%; }
+        .grid-col-4 { width: 33.33%; }
+        .grid-col-5 { width: 41.66%; }
+        .grid-col-6 { width: 50%; }
+        .grid-col-7 { width: 58.33%; }
+        .grid-col-8 { width: 66.66%; }
+        .grid-col-9 { width: 75%; }
+        .grid-col-10 { width: 83.33%; }
+        .grid-col-11 { width: 91.66%; }
+        .grid-col-12 { width: 100%; }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .grid-col {
+                width: 100%;
+            }
+        }
+
+        /* 2. UI Components */
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-primary {
+            background-color: #007bff;
+        }
+
+        .button-secondary {
+            background-color: #6c757d;
+        }
+
+        .button-danger {
+            background-color: #dc3545;
+        }
+
+        /* Cards */
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+
+        .card-header {
+            font-size: 1.25em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card-body {
+            font-size: 1em;
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        /* 3. Utility Classes */
+
+        /* Margin and Padding */
+        .mt-10 { margin-top: 10px; }
+        .mb-10 { margin-bottom: 10px; }
+        .pt-10 { padding-top: 10px; }
+        .pb-10 { padding-bottom: 10px; }
+
+        /* Text Alignment */
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .text-right { text-align: right; }
+
+        /* Font Sizes */
+        .font-small { font-size: 12px; }
+        .font-medium { font-size: 16px; }
+        .font-large { font-size: 24px; }
+
+        /* Display */
+        .d-block { display: block; }
+        .d-inline { display: inline; }
+        .d-none { display: none; }
+
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom CSS Framework Documentation</h1>
+
+    <h2>1. Grid System</h2>
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-col grid-col-6" style="background-color: #ffcccb;">50%</div>
+            <div class="grid-col grid-col-6" style="background-color: #add8e6;">50%</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col grid-col-4" style="background-color: #ffeb3b;">33%</div>
+            <div class="grid-col grid-col-4" style="background-color: #90ee90;">33%</div>
+            <div class="grid-col grid-col-4" style="background-color: #ffb6c1;">33%</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col grid-col-3" style="background-color: #f0e68c;">25%</div>
+            <div class="grid-col grid-col-3" style="background-color: #ffa07a;">25%</div>
+            <div class="grid-col grid-col-3" style="background-color: #afeeee;">25%</div>
+            <div class="grid-col grid-col-3" style="background-color: #dda0dd;">25%</div>
+        </div>
+    </div>
+
+    <h2>2. UI Components</h2>
+
+    <h3>Buttons</h3>
+    <button class="button">Default Button</button>
+    <button class="button button-primary">Primary Button</button>
+    <button class="button button-secondary">Secondary Button</button>
+    <button class="button button-danger">Danger Button</button>
+
+    <h3>Cards</h3>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">This is the body of the card.</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">Another Card</div>
+        <div class="card-body">This is another card with different content.</div>
+    </div>
+
+    <h3>Forms</h3>
+    <div class="form-group">
+        <label class="form-label" for="input1">Label for Input</label>
+        <input type="text" id="input1" class="form-input" placeholder="Enter text here">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input2">Another Label</label>
+        <input type="password" id="input2" class="form-input" placeholder="Enter password here">
+    </div>
+
+    <h2>3. Utility Classes</h2>
+    <div class="mt-10 mb-10 pt-10 pb-10" style="background-color: #d3d3d3;">
+        This box has margin-top, margin-bottom, padding-top, and padding-bottom set to 10px using utility classes.
+    </div>
+    <div class="text-center" style="background-color: #ffe4e1;">
+        This text is centered.
+    </div>
+    <div class="text-right" style="background-color: #e6e6fa;">
+        This text is aligned to the right.
+    </div>
+    <div class="font-small" style="background-color: #f5f5f5;">
+        This is small font size.
+    </div>
+    <div class="font-large" style="background-color: #fafad2;">
+        This is large font size.
+    </div>
+</body>
+</html>
